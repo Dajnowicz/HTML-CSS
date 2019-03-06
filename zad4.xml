@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='ISO-8859-2' ?>
+<szkola>
+	<nauczyciele>
+		<nauczyciel plec="M">
+			<imie>Jan</imie>
+			<nazwisko>Kowalski</nazwisko>
+			<data_urodzenia>1997-06-12</data_urodzenia>
+			<przedmiot>matematyka></przedmiot>		
+		</nauczyciel>
+
+		<nauczyciel plec="M">
+			<imie>Isac</imie>
+			<nazwisko>Newton</nazwisko>
+			<data_urodzenia>1735-23-21</data_urodzenia>
+			<przedmiot>Fizyka</przedmiot>
+		</nauczyciel>
+	</nauczyciele>
+
+	<uczniowie>
+		<uczen plec="M">
+			<imie>Marcel</imie>
+			<nazwisko>Dajnowicz</nazwisko>
+			<data_urodzenia>1997-34-13</data_urodzenia>
+			<poziom>Freshman</poziom>		
+		</uczen>
+	</uczniowie>
+	<pozostali>
+		<wozni uslugi="Sprzatanie">
+			<imie>Jarek</imie>
+			<nazwisko>Woznicki</nazwisko>
+			<data_urodzenia>1974-93-12</data_urodzenia>
+			<plec>M</plec>
+		</wozni>
+	</pozostali>
+</szkola>
+

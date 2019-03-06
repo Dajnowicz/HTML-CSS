@@ -1,0 +1,229 @@
+body {
+background: url(dwa.jpg) repeat;
+background-size:cover;
+display:compact;
+width:auto;
+height:auto;
+overflow:auto;
+color:white;
+}
+
+#pojemnik
+{
+   width: 1000px;
+   min-height:100%;
+   height:100%;
+   height:100%;
+   margin-bottom:-34px;
+    margin: 10px auto;
+    text-align: center;
+}
+#naglowek{
+    float:inherit;
+    height:350px;
+    width:100%;
+}
+
+#MENU{
+   width: 100%;
+    font-size: 16px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: transparent;
+    border-radius: 8px;
+}
+#MENU ul {
+    height: auto;
+    padding: 8px 0px;
+    margin: 0px;
+}
+#MENU li { 
+    display: inline; 
+    padding: 20px; 
+}
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+
+}
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+}
+
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    min-width: 16px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align:left;
+}
+.dropdown:hover .dropdown-content {
+    display:inline;
+    position:center;
+}
+
+#TRESC
+{
+    background-color:transparent;
+   	float:right;
+	width:848px;
+	overflow:auto;
+    position:relative;
+    border-color:red;
+    color:white;
+}
+#stopka{
+    background-color:transparent;
+   	float:right;
+	width:848px;
+	overflow:auto;
+    position:relative;
+    border-color:red;
+    color:red;
+}
+#data{
+    color:yellow;
+    font:arial;
+    font-style:oblique;
+    font-size:40px;
+}
+
+img.tlo_naglowek {
+    height: 350px;
+    width: 100%;
+    position: center;
+    border:5px solid transparent;
+    opacity:0.5;
+}
+
+p.tekst
+{
+	text-align:center;
+    color:white;
+    font-size:28px;
+    font-style:oblique;
+    font-weight:100;
+
+}
+p.tekst2
+{
+	text-align:center;
+    color:white;
+    font-size:25px;
+    font-style:normal;
+}
+p.tekst3
+{
+	text-align:center;
+    color:white;
+    font-size:32px;
+    font-style:oblique;
+}
+section {
+    display: block;
+}
+article {
+    color:blue;
+text-align:center;    
+    font-size:28px;
+    font-style:oblique;
+    font-weight:100;
+
+}
+
+
+p.tytul
+{
+    font-weight:bold; 
+	font-size: 60px; 
+	color:white;
+    font-style:italic; 
+}
+p.stopka{
+    font-style:italic;
+    text-align:right;
+    font-size:small;
+    color:red;
+}
+
+
+
+a:link { color:white; text-decoration: none; background-color: transparent }
+a:visited { color:white; text-decoration: none; background-color: transparent }
+a:hover { color:white;  text-decoration: underline;text-decoration:solid; background-color: transparent }
+a:active { color:white; text-decoration:none; background-color: transparent }
+
+
+
+b.obrazek {
+    text-decoration:overline;
+    display:inline-block;
+    position:relative;
+    
+    transform: scale(1,1);
+    transition-timing-function: ease-out;
+    transition-duration: 200ms;
+}
+    b.obrazek:hover {
+        transform: scale(3,3);
+        transition-timing-function: ease-out;
+        transition-duration: 200ms;
+    }
+
+
+table{
+color: whitesmoke;
+ font-family: Helvetica, Arial, sans-serif;  
+width: 640px;
+border-collapse:collapse;
+border-spacing: 0;
+background-color:transparent;
+font:helvetica;
+}
+
+td, th {
+border: 1px solid transparent; 
+height: 30px;
+transition: all 0.3s; 
+}
+
+tr td:hover { background: #666; color: #FFF; } 
+
+img.statek {
+    width: 75px;
+    height: 75px;
+    float:left;
+    background-color: transparent;
+    position:inherit;
+    animation-name: rocket;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-direction: reverse;
+ 
+}
+@keyframes rocket {
+    0%   {background-color:transparent; left:0px; top:0px;}
+    25%  {background-color:transparent; transform:rotate(45def); left:700px; top:0px;}
+    50%  {background-color:transparent; transform:rotate(200deg); left:700px; top:450px;}
+    75%  {background-color:transparent; transform:rotate(270deg); left:0px; top:450px;}
+    100% {background-color:transparent;  left:0px; top:0px;}
+}

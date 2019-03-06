@@ -1,0 +1,128 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moje Hobby</title>
+</head>
+<body>
+    <div id="pojemnik">
+
+        <header id="naglowek">
+            <figure>
+                <img class="tlo_naglowek" alt="Marcel_tło" src="spacee.jpg" />
+            </figure>
+        </header>
+        <nav id="MENU">
+            <ul>
+                <li><a href="Intro.php">Strona Główna</a></li>
+                <li><a href="Planety.html">Planety w Układzie Słonecznym</a></li>
+                <li class="dropdown">
+                    <a href="galeria.html" class="dropbtn">Galeria</a>
+                    <div class="dropdown-content">
+                        <a href="obrazki.html">Galaktyki</a>
+                        <a href="obrazki2.html">Planety</a>
+                        <a href="obrazki3.html">Gwiazdy</a>
+                    </div>
+                <li><a href="Formularz.php">Formularz</a></li>
+            </ul>
+        </nav>
+        <br /><br /><br />
+
+        <section id="TRESC">      
+            
+            <p class="tekst3">
+                Planety w Układzie Słonecznym
+            </p>
+            <br />
+            <table style="width: 90%; height: 20em">         
+                <tr>
+                    <td class="tytul">Numer</td>
+                    <td class="tytul">Nazwa Planety</td>
+                    <td class="tytul">Masa Planety W Stosunku Do Masy Ziemi</td>
+                    <td class="tytul">Liczba Księżyców</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Merkury</td>
+                    <td>0,06</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Wenus</td>
+                    <td>0,82</td>
+                    <td>0</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Ziemia</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Mars</td>
+                    <td>0,11</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Jowisz</td>
+                    <td>317,9</td>
+                    <td>16</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Saturn</td>
+                    <td>95,18</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Uran</td>
+                    <td>14,5</td>
+                    <td>17</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Neptun</td>
+                    <td>17,24</td>
+                    <td>8</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Plution</td>
+                    <td>0,002</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            <p>Kalkulator Celsjusza na Farenhajta!</p>
+
+            <p><input id="c" onkeyup="convert('C')"> Celsjusza!</p>
+
+            <p><input id="f" onkeyup="convert('F')"> Fahrenheita!</p>
+
+
+            <script>
+                function convert(degree) {
+                    var x;
+                    if (degree == "C") {
+                        x = document.getElementById("c").value * 9 / 5 + 32;
+                        document.getElementById("f").value = Math.round(x);
+                    } else {
+                        x = (document.getElementById("f").value - 32) * 5 / 9;
+                        document.getElementById("c").value = Math.round(x);
+                    }
+                }
+            </script>
+        </section>
+    </div>
+
+    <footer id="stopka">
+        <p class="stopka">
+            Made by Marcel Dajnowicz<br />
+        </p>
+    </footer>
+</body>
+</html>

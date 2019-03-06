@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Moje Hobby</title>
+</head>
+<body>
+    <div id="pojemnik">
+
+        <header id="naglowek">
+            <figure>
+                <img class="tlo_naglowek" alt="Marcel_tło" src="spacee.jpg" />
+            </figure>
+        </header>
+        <nav id="MENU">
+            <ul>
+                <li><a href="Intro.php">Strona Główna</a></li>
+                <li><a href="Planety.html">Planety w Układzie Słonecznym</a></li>
+                <li class="dropdown">
+                    <a href="galeria.html" class="dropbtn">Galeria</a>
+                    <div class="dropdown-content">
+                        <a href="obrazki.html">Galaktyki</a>
+                        <a href="obrazki2.html">Planety</a>
+                        <a href="obrazki3.html">Gwiazdy</a>
+                    </div>
+                <li><a href="Formularz.php">Formularz</a></li>
+            </ul>
+        </nav>
+    
+
+        <button onclick="displayDate()">Ktora Godzina??</button>
+
+        <script>
+            function displayDate() {
+                document.getElementById("data").innerHTML = Date();
+            }
+        </script>
+
+        <p id="data"></p>
+        <br /><br /><br />
+
+            <br/><br /><br /><br /><br /><br /><br /><br /><br />
+            <ul>
+                <li><a href="obrazki.html">Zdjecia Galaktyk</a></li>
+                <li><a href="obrazki2.html">Zdjęcia Planet</a></li>
+                <li><a href="obrazki3.html">Zdjęcia Gwiazd</a></li>
+            </ul>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br />
+        <footer id="stopka">
+            <p class="stopka">
+                Made by Marcel Dajnowicz<br />
+            </p>
+        </footer>
+</body>
+</html>
